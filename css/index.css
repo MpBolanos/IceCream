@@ -1,0 +1,138 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.advantages {
+  background-color: #FFF5F6;
+  padding-top: 40px;
+  padding-bottom: 210px;
+  width: auto;
+}
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-gap: 20px;
+  margin-left: 16px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .advantages__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.advantages__item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+@media screen and (max-width: 1280px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 1);
+  }
+}
+.advantages__title {
+  top: 40px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.advantages__iceCream721::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream721-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.advantages__iceCream16::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream16-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.advantages__iceCream84::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream84-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.advantages__text {
+  width: 288px;
+  top: 120px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}/*# sourceMappingURL=index.css.map */
