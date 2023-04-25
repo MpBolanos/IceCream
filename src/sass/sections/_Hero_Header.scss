@@ -1,0 +1,24 @@
+.header{
+    background-color: $rosa-principal;
+}
+
+.header__nav{
+
+}
+
+.header__nav_list{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav_list > li{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: $blanco-text;
+}
+
+.header_main{
+    font-family: 'Titan One', cursive;
+    color: $blanco-text;
+}
