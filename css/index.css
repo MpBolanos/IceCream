@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -25,6 +27,7 @@
   background-position: center;
 }
 
+>>>>>>> dev
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -97,6 +100,7 @@ img {
 
 svg {
   fill: currentColor;
+<<<<<<< HEAD
 }
 
 .footer {
@@ -170,11 +174,80 @@ svg {
   color: #FFA5BA;
 }
 .footer__title--text {
+=======
+<<<<<<< HEAD
+}
+
+.advantages {
+  display: flex;
+  background-color: #FFF5F6;
+  padding-top: 40px;
+  padding-bottom: 210px;
+}
+@media screen and (min-width: 768.98px), screen and (max-width: 1280px) {
+  .advantages {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 595px) and (max-width: 768px) {
+  .advantages {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages {
+    max-width: 480px;
+  }
+}
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  margin-left: 16px;
+  gap: 15px;
+}
+@media screen and (min-width: 595px) and (max-width: 768px) {
+  .advantages__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.advantages__item {
+  flex-basis: calc((100% - 40px) / 3);
+  margin-top: 36px;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 1);
+  }
+}
+.advantages__title {
+  width: 144px;
+  top: 40px;
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 66px;
+<<<<<<< HEAD
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #D41443;
@@ -196,4 +269,85 @@ svg {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+=======
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__title {
+    width: 144px;
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__title {
+    width: 98px;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__title {
+    width: 98px;
+    font-size: 36px;
+  }
+}
+.advantages__iceCream721::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream721-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+.advantages__iceCream16::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream16-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+.advantages__iceCream84::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream84-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 42px;
+  margin-bottom: 16px;
+}
+.advantages__text {
+  width: 288px;
+  top: 120px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__text {
+    width: 288px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__text {
+    width: 188px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__text {
+    width: 230px;
+  }
+=======
+>>>>>>> dev
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
 }/*# sourceMappingURL=index.css.map */
