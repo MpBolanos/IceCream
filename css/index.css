@@ -74,9 +74,107 @@ img {
   width: 1280px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 1199.98px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 svg {
   fill: currentColor;
+<<<<<<< HEAD
+}
+
+.footer {
+  max-width: auto;
+  background-color: #FFF5F6;
+  padding-top: 121px;
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    max-width: auto;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer {
+    max-width: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    max-width: auto;
+    margin: 0 auto;
+  }
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: auto;
+}
+@media screen and (max-width: 1280px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.footer__title--item {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+.footer__title--text {
+=======
 <<<<<<< HEAD
 }
 
@@ -143,11 +241,35 @@ svg {
 .advantages__title {
   width: 144px;
   top: 40px;
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
   line-height: 66px;
+<<<<<<< HEAD
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer__icons--item {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.footer__icons--link {
+  border-radius: 50%;
+  fill: #FFB8CA;
+  background-color: #fea5bb;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+=======
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
@@ -227,4 +349,5 @@ svg {
   }
 =======
 >>>>>>> dev
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
 }/*# sourceMappingURL=index.css.map */
