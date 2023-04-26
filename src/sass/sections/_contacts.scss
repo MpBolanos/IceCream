@@ -207,4 +207,16 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
+  &__btn-locations {
+    position: absolute;
+    width: 198px;
+    height: 44px;
+    left: 411px;
+    top: 4475px;
+    background: $rosa-text;
+    border-radius: 22px;
+  }
+  &__btn{
+    color: $blanco-text;
+  }
 }
