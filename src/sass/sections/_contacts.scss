@@ -153,6 +153,10 @@
     /* or 29px */
     color: $gris-text;
     z-index: 2;
+    &:hover,
+    &:focus {
+      color: $rosa-text;
+    }
   }
   &__link--main {
     position: absolute;
@@ -168,6 +172,10 @@
     /* or 29px */
     color: $gris-text;
     z-index: 2;
+    &:hover,
+    &:focus {
+      color: $rosa-text;
+    }
   }
   &__foodtruck {
     position: absolute;
@@ -208,6 +216,9 @@
     border-radius: 24px;
   }
   &__btn-locations {
+    color: $blanco-text;
+  }
+  &__btn {
     position: absolute;
     width: 198px;
     height: 44px;
@@ -215,8 +226,32 @@
     top: 4475px;
     background: $rosa-text;
     border-radius: 22px;
-  }
-  &__btn{
     color: $blanco-text;
+  }
+  &__btn-fran {
+    position: absolute;
+    width: 168px;
+    height: 44px;
+    left: 621px;
+    top: 4476px;
+    background: $blanco-text;
+    border-radius: 22px;
+  }
+  &__btn-franchise {
+    color: $rosa-text;
+  }
+  &__btn-icon {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 150px;
+    top: 17px;
+  }
+  &__btn-iconross {
+    position: absolute;
+    width: 8.13px;
+    height: 8px;
+    left: 120px;
+    top: 17px;
   }
 }
