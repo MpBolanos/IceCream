@@ -1,50 +1,69 @@
 .advantages {
   display: flex;
+  justify-content: flex-start;
   background-color: $rosa-secundary;
   padding-top: 40px;
   padding-bottom: 210px;
 
   @media screen and (max-width: 1280px) {
-    max-width: auto;
+    & {
+      max-width: 100%;
+    }
   }
 
   @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-    max-width: auto;
+    & {
+      max-width: 100%;
+    }
   }
 
   @media screen and (max-width: 575px) {
-    max-width: auto;
+    & {
+      max-width: 100%;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0;
+    padding: 0;
+    list-style: none;
     margin-left: 16px;
     gap: 15px;
 
-    
     @media screen and (max-width: 610px) {
-      flex-direction: column;
-      justify-content: center;
+      & {
+        flex-direction: column;
+      }
     }
   }
 
   &__item {
-    flex-basis: calc((100% - 40px) / 3);
+    flex-basis: calc((100% - 30px) / 3);
+    width: auto;
     margin-top: 36px;
 
     @media screen and (max-width: 1280px) {
-      flex-basis: calc((100% - 40px) / 3);
+      & {
+        flex-basis: calc((100% - 30px) / 3);
+        width: auto;
+      }
     }
 
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-      flex-basis: calc((100% - 40px) / 3);
+      & {
+        flex-basis: calc((100% - 30px) / 3);
+        width: 100%;
+        margin: 0;
+      }
     }
 
     @media screen and (max-width: 575px) {
-      flex-basis: calc((100% - 40px) / 1);
+      & {
+        flex-basis: calc((100% - 30px) / 1);
+        max-width: 450px;
+      }
     }
   }
 
@@ -61,18 +80,24 @@
     color: $rosa-text;
 
     @media screen and (max-width: 1280px) {
-      width: 144px;
-      font-size: 58px;
+      & {
+        width: 144px;
+        font-size: 58px;
+      }
     }
 
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-      width: 98px;
-      font-size: 48px;
+      & {
+        width: 98px;
+        font-size: 48px;
+      }
     }
 
     @media screen and (max-width: 575px) {
-      width: 98px;
-      font-size: 36px;
+      & {
+        width: 98px;
+        font-size: 36px;
+      }
     }
   }
 
@@ -121,15 +146,21 @@
     color: $negro-text;
 
     @media screen and (max-width: 1280px) {
-      width: 288px;
+      & {
+        width: 288px;
+      }
     }
 
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-      width: 188px;
+      & {
+        width: 188px;
+      }
     }
 
     @media screen and (max-width: 575px) {
-      width: 230px;
+      & {
+        width: 230px;
+      }
     }
   }
 }
