@@ -5,8 +5,12 @@
     background-color: $rosa-secundary;
   
     @media screen and(min-width: 768px) {
-      padding-top: 122px;
+      padding-top: 100px;
       padding-bottom: 112px;
+    }
+    .container{
+      width: 100%;
+      margin: auto;
     }
   
     @media screen and(min-width: 1280px) {
