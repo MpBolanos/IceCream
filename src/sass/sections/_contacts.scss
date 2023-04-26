@@ -1,17 +1,210 @@
 .contacts {
   &__hidden {
-    display:none;
+    display: none;
   }
   &__card-page {
     position: absolute;
-    width: 75.1px;
-    height: 28px;
-    left: 56px;
-    top: 3917px;
-
-    background: #f0d1a5;
-    border-radius: 6px;
+    width: 368px;
+    height: 538px;
+    left: 16px;
+    top: 3877px;
+    background: $blanco-text;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
   }
   &__category {
+    position: absolute;
+    width: 75.1px;
+    height: 28px;
+    left: 40px;
+    top: 40px;
+    background: $cafe-helado;
+    border-radius: 6px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $blanco-text;
+  }
+  &__city {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 40px;
+    top: 100px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+    letter-spacing: 0.04em;
+    color: $negro-text;
+  }
+  &__city-text {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 40px;
+    top: 138px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    /* or 29px */
+    letter-spacing: 0.04em;
+    color: $gris-text;
+  }
+  &__linea {
+    position: absolute;
+    width: 288px;
+    height: 0px;
+    left: 40px;
+    top: 220px;
+    border: 1px solid #e1e1e1;
+    z-index: 2;
+  }
+  &__working-days {
+    position: absolute;
+    width: 137.86px;
+    height: 30px;
+    left: 40px;
+    top: 252px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+    letter-spacing: 0.04em;
+    color: $negro-text;
+  }
+  &__working-time {
+    position: absolute;
+    width: 167.7px;
+    height: 30px;
+    left: 40px;
+    top: 282px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+    color: $rosa-principal;
+  }
+  &__work-days {
+    position: absolute;
+    width: 156.38px;
+    height: 30px;
+    left: 40;
+    top: 324px;
+    z-index: 2;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+
+    letter-spacing: 0.04em;
+
+    color: $negro-text;
+  }
+  &__work-time {
+    position: absolute;
+    width: 165.64px;
+    height: 30px;
+    left: 40px;
+    top: 354px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+    color: $rosa-principal;
+  }
+  &__linea--uno {
+    position: absolute;
+    width: 288px;
+    height: 0px;
+    left: 40px;
+    top: 416px;
+    border: 1px solid #e1e1e1;
+    z-index: 2;
+  }
+  &__link {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 40px;
+    top: 448px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    /* or 29px */
+    color: $gris-text;
+    z-index: 2;
+  }
+  &__link--main {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 40px;
+    top: 480px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    /* or 29px */
+    color: $gris-text;
+    z-index: 2;
+  }
+  &__foodtruck {
+    position: absolute;
+    width: 368px;
+    height: 538px;
+    left: 416px;
+    top: 3877px;
+    background: $blanco-text;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  &__category-foodtruck {
+    position: absolute;
+    width: 138px;
+    height: 28px;
+    left: 40px;
+    top: 40px;
+    background: $verde-helado;
+    border-radius: 6px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $blanco-text;
+  }
+  &__cafe {
+    position: absolute;
+    width: 368px;
+    height: 538px;
+    left: 816px;
+    top: 3877px;
+    background: $blanco-text;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
   }
 }
