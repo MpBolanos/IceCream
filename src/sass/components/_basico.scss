@@ -38,13 +38,15 @@ img {
 
 .container {
   width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-
-
 
   @media screen and (max-width: 1280px) {
     & {
       max-width: 1280px;
+      padding-left: 16px;
+      padding-right: 16px;
       margin: 0 auto;
     }
   }
@@ -52,6 +54,8 @@ img {
   @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
     & {
       max-width: 1199.98px;
+      padding-left: 32px;
+      padding-right: 32px;
       margin: 0 auto;
     }
   }
@@ -59,13 +63,14 @@ img {
   @media screen and (max-width: 575px) {
     & {
       max-width: 575px;
+      padding-left: 20px;
+      padding-right: 20px;
       margin: 0 auto;
     }
   }
-  
 }
 
-.section{
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
