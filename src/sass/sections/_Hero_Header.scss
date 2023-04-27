@@ -1,24 +1,108 @@
-.header{
-    background-color: $rosa-principal;
+.header {
+    background : $rosa-principal;
+    height: 664px;
 }
 
-.header__nav{
-
-}
-
-.header__nav_list{
+.hero__nav{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.header__nav_list > li{
+.logo{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.hero__nav_list{
+    margin-top: 1.5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__nav_list > li{
+    padding: 0 20px 0 20px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: $blanco-text;
 }
 
-.header_main{
+.hero__nav_list > li:hover{
+    color:$rosa-text;
+}
+
+.hero__nav_btn{
+    margin-top: 1.5%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.btn{
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background: #FFFFFF;
+    color: $rosa-text;
+}
+
+.header__main{
+    
+    width: 28%;
+    margin-left: 2%;
+    margin-top: 5%;
+
     font-family: 'Titan One', cursive;
     color: $blanco-text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.header__main--color-pink{
+    color: $rosa-text;
+}
+
+.header__main__btn{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.btn__preparation{
+    width: auto;
+    height: 40px;
+    border-radius: 22px;
+    border: none;
+    background: #FFFFFF;
+    color: $rosa-text;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn__products{
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: $rosa-text;
+    color: $blanco-text;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header__main_text-milk{
+    
 }
