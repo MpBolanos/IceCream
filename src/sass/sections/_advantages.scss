@@ -1,8 +1,10 @@
 .advantages {
   display: flex;
+  max-width: 100%;
   background-color: $rosa-secundary;
   padding-top: 40px;
   padding-bottom: 210px;
+  margin: 0;
 
   @media screen and (max-width: 1280px) {
     & {
@@ -18,7 +20,7 @@
 
   @media screen and (max-width: 575px) {
     & {
-      max-width: 100%;
+      max-width: auto;
     }
   }
 
@@ -80,21 +82,21 @@
 
     @media screen and (max-width: 1280px) {
       & {
-        width: 144px;
+        max-width: 144px;
         font-size: 58px;
       }
     }
 
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
       & {
-        width: 98px;
+        max-width: 98px;
         font-size: 48px;
       }
     }
 
     @media screen and (max-width: 575px) {
       & {
-        width: 98px;
+        max-width: 98px;
         font-size: 36px;
       }
     }
