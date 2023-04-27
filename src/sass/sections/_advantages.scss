@@ -84,6 +84,7 @@
       & {
         max-width: 144px;
         font-size: 58px;
+        line-height: 66px;
       }
     }
 
@@ -91,6 +92,7 @@
       & {
         max-width: 98px;
         font-size: 48px;
+        line-height: 55px;
       }
     }
 
@@ -98,6 +100,7 @@
       & {
         max-width: 98px;
         font-size: 36px;
+        line-height: 41px;
       }
     }
   }
@@ -111,6 +114,15 @@
     height: 50px;
     margin-bottom: 32px;
     margin-bottom: 16px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/avantages/iceCream721-icon-2x.png);
+      background-size: contain;
+      width: 44px;
+      height: 50px;
+    }
   }
 
   &__iceCream16::before {
@@ -122,6 +134,15 @@
     height: 50px;
     margin-bottom: 32px;
     margin-bottom: 16px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/avantages/iceCream16-icon-2x.png);
+      background-size: contain;
+      width: 44px;
+      height: 50px;
+    }
   }
 
   &__iceCream84::before {
@@ -133,6 +154,15 @@
     height: 50px;
     margin-bottom: 42px;
     margin-bottom: 16px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/avantages/iceCream84-icon-2x.png);
+      background-size: contain;
+      width: 44px;
+      height: 50px;
+    }
   }
 
   &__text {
@@ -149,18 +179,24 @@
     @media screen and (max-width: 1280px) {
       & {
         width: 288px;
+        font-size: 16px;
+        line-height: 176%;
       }
     }
 
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
       & {
         width: 188px;
+        font-size: 14px;
+        line-height: 174%;
       }
     }
 
     @media screen and (max-width: 575px) {
       & {
         width: 230px;
+        font-size: 12px;
+        line-height: 170%;
       }
     }
   }
