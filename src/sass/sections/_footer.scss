@@ -31,6 +31,7 @@
     margin-left: 16px;
     margin-right: 16px;
     width: 100%;
+    height: 877px;
 
     @media screen and (max-width: 1280px) {
       & {
@@ -57,6 +58,7 @@
         flex-direction: column;
         margin-left: 16px;
         margin-right: 16px;
+        height: 1513px;
       }
     }
   }
@@ -65,7 +67,6 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-
     &--item {
       font-family: 'Titan One';
       font-style: normal;
@@ -75,6 +76,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $rosa-circulo;
+      margin-top: 850px;
 
       @media screen and (max-width: 1280px) {
         & {
@@ -84,14 +86,30 @@
 
       @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
         & {
+          margin-top: 776px;
+          max-width: 332px;
           font-size: 26px;
+          font-family: 'Titan One';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 30px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
         }
       }
 
       @media screen and (max-width: 575px) {
         & {
-          max-width: 232px;
+          margin-top: 1206px;
+          max-width: 332px;
           font-size: 18px;
+          font-family: 'Titan One';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 21px;
+          text-transform: uppercase;
         }
       }
     }
@@ -105,6 +123,7 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: $rosa-text;
+      margin-top: 16px;
 
       @media screen and (max-width: 1280px) {
         & {
@@ -114,16 +133,81 @@
 
       @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
         & {
-          max-width: 200px;
+          margin-top: 20px;
+          max-width: 100px;
           font-size: 48px;
+          font-family: 'Titan One';
+          font-style: normal;
+          font-weight: 400;
+          line-height: 60px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
         }
       }
 
       @media screen and (max-width: 575px) {
         & {
-          font-size: 34px;
+          margin-top: 20px;
+          width: 200px;
+          height: 76px;
+          font-family: 'Titan One';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 64px;
+          line-height: 69px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
         }
       }
+    }
+    &--tel {
+      color: $negro-text;
+      position: absolute;
+      width: 319px;
+      height: 30px;
+      right: 16px;
+      top: 1050px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 186%;
+      /* identical to box height, or 30px */
+      letter-spacing: 0.02em;
+      @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+        & {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 186%;
+          /* identical to box height, or 26px */
+          text-align: right;
+          color: $negro-text;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        & {
+          margin-top: 1526px;
+          font-size: 34px;
+          position: absolute;
+          width: 330px;
+          height: 22px;
+          right: 16px;
+          top: 150px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 186%;
+          /* or 22px */
+          text-align: right;
+          color: $negro-text;
+        }
+      }
+    }
+    &--tellink {
+      color: $rosa-text;
     }
   }
 
@@ -131,10 +215,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
+    margin-top: 860px;
     @media screen and (max-width: 575px) {
       & {
         position: absolute;
+        top: 750px;
+        right: 16px;
       }
     }
 
@@ -151,6 +237,63 @@
       transition-property: background-color, color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        fill: $rosa-text;
+      }
+    }
+  }
+  &__linea {
+    position: absolute;
+    width: 1167px;
+    height: 0px;
+    left: 17px;
+    top: 1150px;
+    border: 1px solid #e1e1e1;
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      & {
+        margin-top: 768px;
+        width: 678px;
+        border: 1px solid #e1e1e1;
+
+        top: 380px;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      & {
+        margin-top: 636px;
+        width: 220px;
+      }
+    }
+  }
+  &__copyright {
+    position: absolute;
+    width: 278px;
+    height: 26px;
+    left: 462px;
+    top: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+    /* identical to box height, or 26px */
+    letter-spacing: 0.02em;
+    color: $gris-text;
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      & {
+        position: absolute;
+        left: 230px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      & {
+        position: absolute;
+        left: 130px;
+        width: 200px;
+      }
     }
   }
 }
