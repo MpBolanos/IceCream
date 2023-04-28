@@ -5,6 +5,7 @@
   padding-top: 40px;
   padding-bottom: 210px;
   margin: 0;
+  padding-right: 0;
 
   @media screen and (max-width: 1280px) {
     & {
@@ -22,6 +23,10 @@
     & {
       max-width: auto;
     }
+  }
+
+  &__container {
+    padding-right: 0;
   }
 
   &__list {
