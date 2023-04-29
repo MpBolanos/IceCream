@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -5,6 +6,40 @@ body {
   font-size: 14px;
   line-height: 1;
   overflow-x: hidden;
+=======
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+>>>>>>> dev
 }
 
 ul,
@@ -44,6 +79,7 @@ img {
   width: 1280px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -67,12 +103,15 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+=======
+>>>>>>> dev
 
 svg {
   fill: currentColor;
 }
 
 .footer {
+<<<<<<< HEAD
   display: flex;
   max-width: auto;
   background-color: #FFF5F6;
@@ -161,6 +200,37 @@ svg {
   }
 }
 .footer__title--text {
+=======
+  position: absolute;
+  width: 1280px;
+  height: 877px;
+  left: 0px;
+  top: 3976px;
+  index: 1;
+  background-color: #FFF5F6;
+}
+.footer__title--item {
+  position: absolute;
+  width: 472px;
+  height: 34px;
+  left: 16px;
+  top: 4640px;
+  text-transform: uppercase;
+  color: #FFB8CA;
+  font-family: Titan One;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.footer__title--text {
+  position: absolute;
+  width: 574px;
+  height: 66px;
+  left: 16px;
+  top: 4690px;
+>>>>>>> dev
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -170,6 +240,7 @@ svg {
   text-transform: uppercase;
   color: #D41443;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 1280px) {
   .footer__title--text {
     font-size: 58px;
@@ -246,11 +317,43 @@ svg {
   display: flex;
   justify-content: space-between;
   margin-top: none;
+=======
+.footer__icons {
+  position: absolute;
+  width: 162px;
+  height: 34px;
+  left: 1110px;
+  top: 4652px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+.footer__icons-link {
+  position: absolute;
+  border-radius: 50%;
+  fill: #FFB8CA;
+  background-color: #FFB8CA;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__icons-link:hover, .footer__icons-link:focus {
+  background-color: #D41443;
+  fill: #D41443;
+}
+.footer__tel {
+  position: absolute;
+  width: 319px;
+  height: 30px;
+  left: 990px;
+  top: 4726px;
+>>>>>>> dev
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 186%;
+<<<<<<< HEAD
   text-align: right;
   color: #000000;
 }
@@ -263,4 +366,39 @@ svg {
 }
 .footer__tel-link {
   color: #D41443;
+=======
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.footer__tel-link {
+  color: #D41443;
+}
+.footer__copyright {
+  position: absolute;
+  width: 278px;
+  height: 26px;
+  left: 462px;
+  top: 4890px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 186%;
+  /* identical to box height, or 26px */
+  letter-spacing: 0.02em;
+  color: #907E82;
+}
+
+.contacts__hidden {
+  color: #D41443;
+}
+.contacts__card-page {
+  position: absolute;
+  width: 75.1px;
+  height: 28px;
+  left: 56px;
+  top: 3917px;
+  background: #f0d1a5;
+  border-radius: 6px;
+>>>>>>> dev
 }/*# sourceMappingURL=index.css.map */
