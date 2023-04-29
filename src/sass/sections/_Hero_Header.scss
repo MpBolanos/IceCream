@@ -105,7 +105,10 @@
 
 .header__main_text-milk{
     width: 100%;
-    background-image: url("./../../../IceCream/src/images/milk.jpg");
+    background-image: url(../../images/header/ice-cream.png);
     background-size: 100% 600px;
     background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
