@@ -1,0 +1,169 @@
+.customer {
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+  }
+
+  &__article {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    background-color: #fafafa;
+    padding: 45px 50px 20px 50px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      top: 28px;
+      left: 61px;
+      background: url('../images/customer/quotes.svg');
+      z-index: 33;
+
+      @media screen and (min-width: 768px) {
+        & {
+          top: 30px;
+          left: 40px;
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        & {
+          top: 32px;
+          left: 50px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      & {
+        max-width: 620px;
+        padding: 45px 35px 30px 60px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        max-width: 926px;
+        padding: 45px 55px 30px 60px;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    color: $negro-text;
+    padding: 0 15px;
+    z-index: 44;
+    background: repeating-linear-gradient(
+      transparent,
+      transparent 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
+
+    @media screen and (min-width: 768px) {
+      & {
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+        background: repeating-linear-gradient(
+          transparent,
+          transparent 28px,
+          #e1e1e1 28px,
+          #e1e1e1 29px
+        );
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        font-size: 16px;
+        line-height: 1.86;
+        padding: 0 30px;
+      }
+    }
+  }
+
+  &__dot {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    background-color: $rosa-text;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      left: -14px;
+      background-color: $rosa-text;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      right: -14px;
+      background-color: $rosa-text;
+    }
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+}
