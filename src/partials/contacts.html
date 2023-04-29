@@ -1,103 +1,92 @@
 <section class="contacts">
   <div class="container">
     <h2 class="contacts__hidden">contacts</h2>
-    <ul class="list">
+    <ul class="contacts__card list">
       <li class="contacts__card-page">
         <p class="contacts__category">CAFE</p>
-        <div>
-          <p class="contacts__city">Chicago</p>
-          <p class="contacts__city-text">
+        <div class="contacts__page-part">
+          <p class="city">Chicago</p>
+          <p class="city-text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
-        <div class="contacts__linea"></div>
-        <ul class="list">
-          <li>
-            <p class="contacts__working-days">Monday - Friday</p>
-            <p class="contacts__working-time">06:00 AM - 10:00 PM</p>
+        <ul class="contacts__page-part list working">
+          <li class="working-time--margin">
+            <p class="working-days">Monday - Friday</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
-            <p class="contacts__work-days">Saturday - Sunday</p>
-            <p class="contacts__work-time">08:00 AM - 16:00 PM</p>
+            <p class="working-days">Saturday - Sunday</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
-        <div class="contacts__linea--uno"></div>
-        <ul class="list">
+
+        <ul class="contacts__page-part list info">
           <li>
-            <a href="tel:+61(0)383766284" class="contacts__link"
-              >+61(0) 383 766 284</a
-            >
+            <a href="tel:+61(0)383766284" class="link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link--main"
+            <a href="mailto:noreply@envato.com" class="link"
               >noreply@envato.com</a
             >
           </li>
         </ul>
       </li>
 
-      <li class="contacts__foodtruck">
-        <p class="contacts__category-foodtruck">FOODTRUCK</p>
-        <div>
-          <p class="contacts__city">Los Angeles</p>
-          <p class="contacts__city-text">
+      <li class="contacts__card-page">
+        <p class="contacts__category contacts__category-foodtruck">FOODTRUCK</p>
+        <div class="contacts__page-part">
+          <p class="city">Los Angeles</p>
+          <p class="city-text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
-        <div class="contacts__linea"></div>
-        <ul class="list">
-          <li>
-            <p class="contacts__working-days">Monday - Friday</p>
-            <p class="contacts__working-time">06:00 AM - 10:00 PM</p>
+        <ul class="contacts__page-part list working">
+          <li class="working-time--margin">
+            <p class="working-days">Monday - Friday</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
-            <p class="contacts__work-days">Saturday - Sunday</p>
-            <p class="contacts__work-time">08:00 AM - 16:00 PM</p>
+            <p class="working-days">Saturday - Sunday</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
-        <div class="contacts__linea--uno"></div>
-        <ul class="list">
+        <ul class="contacts__page-part list info">
           <li>
-            <a href="tel:+61(0)383766284" class="contacts__link"
-              >+61(0) 383 766 284</a
-            >
+            <a href="tel:+61(0)383766284" class="link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link--main"
+            <a href="mailto:noreply@envato.com" class="link"
               >noreply@envato.com</a
             >
           </li>
         </ul>
       </li>
 
-      <li class="contacts__cafe">
+      <li class="contacts__card-page ">
         <p class="contacts__category">CAFE</p>
-        <div>
-          <p class="contacts__city">New York</p>
-          <p class="contacts__city-text">
+        <div class="contacts__page-part">
+          <p class="city">New York</p>
+          <p class="city-text">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
         </div>
-        <div class="contacts__linea"></div>
-        <ul class="list">
-          <li>
-            <p class="contacts__working-days">Monday - Friday</p>
-            <p class="contacts__working-time">06:00 AM - 10:00 PM</p>
+        <ul class="contacts__page-part list working">
+          <li class="working-time--margin">
+            <p class="working-days">Monday - Friday</p>
+            <p class="working-time">06:00 AM - 10:00 PM</p>
           </li>
           <li>
-            <p class="contacts__work-days">Saturday - Sunday</p>
-            <p class="contacts__work-time">08:00 AM - 16:00 PM</p>
+            <p class="working-days">Saturday - Sunday</p>
+            <p class="working-time">08:00 AM - 16:00 PM</p>
           </li>
         </ul>
-        <div class="contacts__linea--uno"></div>
-        <ul class="list">
+        <ul class="contacts__page-part list info">
           <li>
-            <a href="tel:+61(0)383766284" class="contacts__link"
-              >+61(0) 383 766 284</a
-            >
+            <a href="tel:+61(0)383766284" class="link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link--main"
+            <a href="mailto:noreply@envato.com" class="link"
               >noreply@envato.com</a
             >
           </li>
@@ -107,7 +96,7 @@
 
     <div class="contacts__buttons">
       <button
-        class="contacts__btn contacts__btn-locations"
+        class="contacts__btn contacts__btn-locations btn"
         type="button"
         data-modal-locations-open
       >
@@ -118,16 +107,15 @@
       </button>
 
       <button
-        class="contacts__btn-fran contacts__btn-franchise"
+        class="contacts__btn-fran contacts__btn-franchise btn"
         type="button"
         data-modal-franchise-open
       >
         Franchise
-        <svg class="contacts__btn-iconross" width="7" height="10">
+        <svg class="contacts__btn-icon" width="7" height="10">
           <use href="./images/icon.svg#icon-VectorRS"></use>
         </svg>
       </button>
     </div>
   </div>
 </section>
-

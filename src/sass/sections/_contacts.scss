@@ -1,257 +1,433 @@
 .contacts {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.01) 5%,
+    rgba(255, 245, 246, 1) 5%
+  );
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.01) 14%,
+      rgba(255, 245, 246, 1) 14%
+    );
+  }
+  display: flex;
+  max-width: auto;
+  background-color: $rosa-secundary;
+  padding-top: 121px;
+
+  @media screen and (max-width: 1280px) {
+    & {
+      max-width: auto;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    & {
+      max-width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    & {
+      max-width: auto;
+      margin: 0 auto;
+    }
+  }
+
   &__hidden {
     display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    @media screen and (max-width: 1280px) {
+      margin-top: -30px;
+      margin-left: -30px;
+      margin-bottom: 155px;
+    }
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: -20px;
+      margin-left: -20px;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: 575px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 55px;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
   }
   &__card-page {
-    position: absolute;
-    width: 368px;
+    display: flex;
+    flex-direction: column;
+    width: 224px;
     height: 538px;
-    left: 16px;
-    top: 3877px;
-    background: $blanco-text;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    flex-basis: calc(100% / 3 - 20px);
+    transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+      transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    box-shadow: rgba(212, 20, 67, 0.1) 0px 8px 30px;
     border-radius: 24px;
+    @media screen and (max-width: 1280px) {
+    }
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 50px 31px;
+      flex-basis: calc(100% / 3 - 20px);
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      width: 280px;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 43px 20px;
+      border-radius: 24px;
+      margin-left: 45px;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+      box-shadow: 0px 5px 15px 0px rgba(85, 85, 85, 0.3);
+
+      @media screen and (min-width: 768px) {
+        transform: scale(1.02);
+      }
+    }
+  }
+  &__page-part:not(:last-child) {
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    @media screen and (max-width: 1280px) {
+    }
+    margin-left: 40px;
+    margin-right: 40px;
+
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 575px) {
+      border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+      padding-bottom: 0;
+      margin-bottom: 0;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
   }
   &__category {
-    position: absolute;
-    width: 75.1px;
-    height: 28px;
-    left: 40px;
-    top: 40px;
-    background: $cafe-helado;
-    border-radius: 6px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* or 30px */
-    text-align: center;
-    letter-spacing: 0.04em;
+    background-color: $cafe-helado;
     color: $blanco-text;
-  }
-  &__city {
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    left: 40px;
-    top: 100px;
-    font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* identical to box height, or 30px */
+    font-size: 12px;
+    line-height: 1.86;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
     letter-spacing: 0.04em;
-    color: $negro-text;
-  }
-  &__city-text {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 40px;
-    top: 138px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 183%;
-    /* or 29px */
-    letter-spacing: 0.04em;
-    color: $gris-text;
-  }
-  &__linea {
-    position: absolute;
-    width: 288px;
-    height: 0px;
-    left: 40px;
-    top: 220px;
-    border: 1px solid #e1e1e1;
-    z-index: 2;
-  }
-  &__working-days {
-    position: absolute;
-    width: 137.86px;
-    height: 30px;
-    left: 40px;
-    top: 252px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* identical to box height, or 30px */
-    letter-spacing: 0.04em;
-    color: $negro-text;
-  }
-  &__working-time {
-    position: absolute;
-    width: 167.7px;
-    height: 30px;
-    left: 40px;
-    top: 282px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* identical to box height, or 30px */
-    color: $rosa-principal;
-  }
-  &__work-days {
-    position: absolute;
-    width: 156.38px;
-    height: 30px;
-    left: 40;
-    top: 324px;
-    z-index: 2;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* identical to box height, or 30px */
+    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-left: 40px;
+    @media screen and (max-width: 1280px) {
+    }
 
-    letter-spacing: 0.04em;
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      width: 73px;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+    @media screen and (max-width: 575px) {
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+      margin-bottom: 0;
+      margin-left: 12px;
+      margin-top: 12px;
+    }
 
-    color: $negro-text;
+    &-foodtruck {
+      background-color: $verde-helado;
+      width: 130px;
+
+      @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        letter-spacing: 0.04em;
+
+        margin-bottom: 138px;
+      }
+    }
   }
-  &__work-time {
-    position: absolute;
-    width: 165.64px;
-    height: 30px;
-    left: 40px;
-    top: 354px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
+  .city {
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
+    margin-left: 0;
+    @media screen and (max-width: 1280px) {
+    }
+
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      margin-bottom: 25px;
+      margin-left: 0;
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 1.83;
+      color: $gris-text;
+      @media screen and (max-width: 1280px) {
+      }
+
+      @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: $gris-text;
+      }
+    }
+  }
+  .working {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 0;
+    &-days {
+      font-size: 16px;
+      @media screen and (max-width: 1280px) {
+      }
+
+      @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+    }
+
+    &-time {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: $rosa-principal;
+      @media screen and (max-width: 1280px) {
+      }
+
+      @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 575px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        color: $rosa-principal;
+        margin-bottom: 25px;
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+
+    &-time--margin {
+      margin-bottom: 0;
+    }
+  }
+  &-days {
     font-size: 16px;
-    line-height: 186%;
-    /* identical to box height, or 30px */
-    color: $rosa-principal;
+    margin-left: 40px;
+    @media screen and (max-width: 1280px) {
+    }
+
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.86;
+    }
   }
-  &__linea--uno {
-    position: absolute;
-    width: 288px;
-    height: 0px;
-    left: 40px;
-    top: 416px;
-    border: 1px solid #e1e1e1;
-    z-index: 2;
-  }
-  &__link {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 40px;
-    top: 448px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
+
+  &-time {
     font-size: 16px;
-    line-height: 183%;
-    /* or 29px */
+    @media screen and (max-width: 1280px) {
+    }
+
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.86;
+      color: $rosa-principal;
+    }
+  }
+
+  &-time--margin {
+    margin-bottom: 20px;
+  }
+
+  .info .link {
+    display: flex;
+    align-self: stretch;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
     color: $gris-text;
-    z-index: 2;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 32px;
+
     &:hover,
     &:focus {
       color: $rosa-text;
     }
-  }
-  &__link--main {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 40px;
-    top: 480px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 183%;
-    /* or 29px */
-    color: $gris-text;
-    z-index: 2;
-    &:hover,
-    &:focus {
-      color: $rosa-text;
+    @media screen and (max-width: 1280px) {
+    }
+
+    @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      color: $gris-text;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      margin-left: 12px;
+      margin-top: 24px;
+      margin-bottom: 0;
     }
   }
-  &__foodtruck {
-    position: absolute;
-    width: 368px;
-    height: 538px;
-    left: 416px;
-    top: 3877px;
-    background: $blanco-text;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+}
+.contacts__buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 420px;
+  margin-top: 60px;
+  gap: 12px;
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    flex-direction: row;
+    justify-content: center;
   }
-  &__category-foodtruck {
-    position: absolute;
-    width: 138px;
-    height: 28px;
-    left: 40px;
-    top: 40px;
-    background: $verde-helado;
-    border-radius: 6px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 186%;
-    /* or 30px */
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $blanco-text;
+  @media screen and (max-width: 575px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:0;
   }
-  &__cafe {
-    position: absolute;
-    width: 368px;
-    height: 538px;
-    left: 816px;
-    top: 3877px;
-    background: $blanco-text;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+}
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .btn:first-child {
+    margin-bottom: 10px;
   }
-  &__btn-locations {
-    color: $blanco-text;
+
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    &:first-child {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
   }
-  &__btn {
-    position: absolute;
-    width: 198px;
-    height: 44px;
-    left: 411px;
-    top: 4475px;
-    background: $rosa-text;
-    border-radius: 22px;
-    color: $blanco-text;
+}
+.contacts__btn-locations {
+  color: $blanco-text;
+  fill: $blanco-text;
+  background-color: $rosa-text;
+  padding: 12px 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
   }
-  &__btn-fran {
-    position: absolute;
-    width: 168px;
-    height: 44px;
-    left: 621px;
-    top: 4476px;
-    background: $blanco-text;
-    border-radius: 22px;
+
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    padding: 12px 30px;
   }
-  &__btn-franchise {
-    color: $rosa-text;
+
+  @media screen and (max-width: 575px) {
+    padding: 12px 17px;
   }
-  &__btn-icon {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 150px;
-    top: 17px;
+}
+.contacts__btn-franchise {
+  color: $rosa-text;
+  background-color: $blanco-text;
+  padding: 12px 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
-  &__btn-iconross {
-    position: absolute;
-    width: 8.13px;
-    height: 8px;
-    left: 120px;
-    top: 17px;
+
+  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+    padding: 12px 38px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 12px 33px;
   }
 }
