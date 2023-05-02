@@ -143,12 +143,12 @@
   z-index: 0;
 
   .gallery-grid__link:hover & {
-    transform: scale(1.5);
+    transform: scale(1.2);
     position: absolute;
     z-index: 1;
   }
 
-  .gallery-grid__link:hover &--big {
+  .gallery-grid__link:hover & {
     transform: scale(1.2);
   }
 }
