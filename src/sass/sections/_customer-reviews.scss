@@ -140,7 +140,7 @@
     .caption{margin-left: 115px; width: 180px; height: 239px; font-size: 15px;}
     #slides .inner { height: auto;}
     .divider {width: 240px; margin-left: -210px;}
-    #circles_slide {margin-top: -5px;}
+    #circles_slide {margin-top: 35px;}
     .divider_4 { margin-top: -37px;}
     .divider_6 { margin-top: 127px;}
     .divider_5 { margin-top: -4px;}
@@ -150,7 +150,17 @@
   }
   @media screen and (max-width: 555px) { 
     .textbox {width: 280px;}
-    .caption {margin-left: 50px;}
+    .caption {margin-left: 50px; margin-top:80px;}
+    .pfp{
+      left:120px;
+      top:0;
+     }
+     .place{
+       position: absolute;
+       left:120px;
+       top:415px;
+     }
+     
   }
   
   @media screen and (max-width: 421px) { 
