@@ -20,6 +20,7 @@
 #overflow {
   width: 100%;
   overflow: hidden;
+  
 }
 #slide1:checked ~ #slides .inner {
   margin-left: 0;
@@ -57,6 +58,8 @@
   
   #slides .slide_1 {
     background: $blanco-text;
+   
+
   }
   #slides .slide_2 {
     background: $blanco-text;
@@ -79,6 +82,11 @@
     background: #ccc;
     height: 10px;
     margin: 0 10px;
+  }
+  .pfp{
+   position: absolute;
+   left:550px;
+   top:100px;
   }
   
   .circles label {
