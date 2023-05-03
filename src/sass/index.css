@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1;
+  overflow-x: hidden;
+=======
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -30,6 +39,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1;
+>>>>>>> dev
 }
 
 ul,
@@ -69,12 +79,128 @@ img {
   width: 1280px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 1199.98px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+=======
+>>>>>>> dev
 
 svg {
   fill: currentColor;
 }
 
 .footer {
+<<<<<<< HEAD
+  display: flex;
+  max-width: auto;
+  background-color: #FFF5F6;
+  padding-top: 121px;
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer {
+    max-width: 1199.98px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+}
+.footer__title--item {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+  margin-top: 890px;
+}
+@media screen and (max-width: 1280px) {
+  .footer__title--item {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer__title--item {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer__title--item {
+    max-width: 232px;
+    font-size: 18px;
+    height: 1513px;
+  }
+}
+.footer__title--text {
+=======
   position: absolute;
   width: 1280px;
   height: 877px;
@@ -104,6 +230,7 @@ svg {
   height: 66px;
   left: 16px;
   top: 4690px;
+>>>>>>> dev
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -113,6 +240,84 @@ svg {
   text-transform: uppercase;
   color: #D41443;
 }
+<<<<<<< HEAD
+@media screen and (max-width: 1280px) {
+  .footer__title--text {
+    font-size: 58px;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer__title--text {
+    max-width: 200px;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer__title--text {
+    font-size: 34px;
+  }
+}
+.footer__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-top: 890px;
+  position: relative;
+}
+@media screen and (max-width: 575px) {
+  .footer__icons {
+    position: absolute;
+    max-width: 232px;
+  }
+}
+.footer__icons--item {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.footer__icons--link {
+  border-radius: 50%;
+  fill: #FFB8CA;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 16px;
+}
+.footer__icons--link:hover, .footer__icons--link:focus {
+  fill: #D41443;
+}
+.footer__linea {
+  position: relative;
+  width: 1167px;
+  height: 0px;
+  left: 37px;
+  top: 0;
+  border: 1px solid #e1e1e1;
+}
+@media (max-width: 575px) {
+  .footer__linea {
+    left: 0px;
+    border: 1px solid #e1e1e1;
+    width: 100%;
+  }
+}
+.footer__copyright {
+  position: relative;
+  left: 550px;
+  top: 7px;
+}
+@media (max-width: 575px) {
+  .footer__copyright {
+    width: 50%;
+    left: 150px;
+  }
+}
+.footer__tel {
+  position: absolute;
+  top: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: none;
+=======
 .footer__icons {
   position: absolute;
   width: 162px;
@@ -142,11 +347,26 @@ svg {
   height: 30px;
   left: 990px;
   top: 4726px;
+>>>>>>> dev
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 186%;
+<<<<<<< HEAD
+  text-align: right;
+  color: #000000;
+}
+@media screen and (max-width: 575px) {
+  .footer__tel {
+    font-size: 16px;
+    margin-top: 890px;
+    margin-left: 150px;
+  }
+}
+.footer__tel-link {
+  color: #D41443;
+=======
   letter-spacing: 0.02em;
   color: #000000;
 }
@@ -180,4 +400,5 @@ svg {
   top: 3917px;
   background: #f0d1a5;
   border-radius: 6px;
+>>>>>>> dev
 }/*# sourceMappingURL=index.css.map */
