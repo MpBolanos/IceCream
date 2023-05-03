@@ -4,6 +4,9 @@
 <symbol id="icon-menor" viewBox="0 0 26 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
 </symbol>
+<symbol id="icon-VectorRS" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.040 3.2l13.226 12.8-13.226 12.8"></path>
+</symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path  d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z"></path>
 <path fill="#fff" d="M20.446 15.981h-2.611v9.619h-3.955v-9.619h-1.88v-3.379h1.88v-2.187c0-1.564 0.739-4.014 3.991-4.014l2.929 0.012v3.281h-2.125c-0.348 0-0.839 0.176-0.839 0.922v1.989h2.955l-0.345 3.377z"></path>
@@ -20,4 +23,5 @@
 <path fill="none" stroke="#e1e1e1" style="stroke: var(--color1, #e1e1e1)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h18672"></path>
 </symbol>
 </defs>
+</svg>
 </svg>
