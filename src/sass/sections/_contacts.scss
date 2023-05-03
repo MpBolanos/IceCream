@@ -1,18 +1,9 @@
 .contacts {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.01) 5%,
-    rgba(255, 245, 246, 1) 5%
-  );
-  @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.01) 14%,
-      rgba(255, 245, 246, 1) 14%
-    );
-  }
+  position: relative;
+  background-color: $rosa-secundary;
+  height: 100%;
   display: flex;
-  max-width: auto;
+  bottom: -15px;
 
   @media screen and (max-width: 1280px) {
     & {
@@ -82,8 +73,9 @@
       transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     box-shadow: rgba(212, 20, 67, 0.1) 0px 8px 30px;
     border-radius: 24px;
-    color: $blanco-text;
+    background-color: $blanco-text;
     @media screen and (max-width: 1280px) {
+      color: $blanco-text;
     }
     @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
       width: 224px;
