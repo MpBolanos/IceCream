@@ -1,9 +1,7 @@
 .footer {
-  padding-bottom: 25px;
   position: relative;
   background-color: $rosa-secundary;
   height: 280px;
-
   &::after {
     content: '';
     display: block;
