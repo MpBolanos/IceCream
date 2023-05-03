@@ -25,9 +25,13 @@
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <scrip type="module" src="./index.js"></script>
   </head>
   <body>
+    <!-- ❗️❗️❗️ Add partials page header -->
+
+    <include src="./partials/Hero__Header.html"></include>
+
     <main>
       <!-- ❗️❗️❗️ Add partials like so for every page (Hero, Products, About, Advantages, Gallery, CustomerReviews, Contacts)-->
       <include src="./partials/products.html"></include>
@@ -36,6 +40,9 @@
       <include src="./partials/gallery.html"></include>
       <include src="./partials/customer-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
+      <include src="./partials/Hero__Header.html"></include>
+      <!-- ❗️❗️❗️ Add partials like so for every page (Products, About, Advantages, Gallery, CustomerReviews, Contacts)-->
+      
     </main>
     <!-- ❗️❗️❗️ Add partials page footer -->
     <include src="./partials/footer.html"></include>
