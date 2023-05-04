@@ -1,0 +1,353 @@
+<<<<<<< HEAD
+=======
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+>>>>>>> dev
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 1199.98px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+svg {
+  fill: currentColor;
+<<<<<<< HEAD
+}
+
+.footer {
+  max-width: auto;
+  background-color: #FFF5F6;
+  padding-top: 121px;
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    max-width: auto;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer {
+    max-width: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    max-width: auto;
+    margin: 0 auto;
+  }
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: auto;
+}
+@media screen and (max-width: 1280px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.footer__title--item {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+.footer__title--text {
+=======
+<<<<<<< HEAD
+}
+
+.advantages {
+  display: flex;
+  background-color: #FFF5F6;
+  padding-top: 40px;
+  padding-bottom: 210px;
+}
+@media screen and (min-width: 768.98px), screen and (max-width: 1280px) {
+  .advantages {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 595px) and (max-width: 768px) {
+  .advantages {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages {
+    max-width: 480px;
+  }
+}
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  margin-left: 16px;
+  gap: 15px;
+}
+@media screen and (min-width: 595px) and (max-width: 768px) {
+  .advantages__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.advantages__item {
+  flex-basis: calc((100% - 40px) / 3);
+  margin-top: 36px;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    flex-basis: calc((100% - 40px) / 1);
+  }
+}
+.advantages__title {
+  width: 144px;
+  top: 40px;
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+<<<<<<< HEAD
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer__icons--item {
+  display: inline-flex;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+.footer__icons--link {
+  border-radius: 50%;
+  fill: #FFB8CA;
+  background-color: #fea5bb;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+=======
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__title {
+    width: 144px;
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__title {
+    width: 98px;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__title {
+    width: 98px;
+    font-size: 36px;
+  }
+}
+.advantages__iceCream721::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream721-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+.advantages__iceCream16::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream16-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+.advantages__iceCream84::before {
+  content: "";
+  display: block;
+  background-image: url(../images/avantages/iceCream84-icon.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 42px;
+  margin-bottom: 16px;
+}
+.advantages__text {
+  width: 288px;
+  top: 120px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+@media screen and (max-width: 1280px) {
+  .advantages__text {
+    width: 288px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages__text {
+    width: 188px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__text {
+    width: 230px;
+  }
+=======
+>>>>>>> dev
+>>>>>>> 8e1dbe028bc31dfbc2eefcd9d4fef55d94a4525d
+}/*# sourceMappingURL=index.css.map */
