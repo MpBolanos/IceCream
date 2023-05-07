@@ -48,7 +48,7 @@
     width: 100%;
     @media screen and(min-width: 320px) and(max-width: 480px) {
       & {
-        width: 318px;
+        width: 218px;
         font-size: 26px;
         z-index: 1;
         margin-top: 140px;
@@ -118,6 +118,13 @@
     background-image: url(../images/header/milk.png);
     background-repeat: no-repeat;
 
+    @media screen and(min-width: 481px) and(max-width: 768px) {
+      & {
+        background-image: url(../images/header/milk_tablet.png);
+        background-repeat: no-repeat;
+      }
+    }
+
     @media screen and(min-width: 320px) and(max-width: 480px) {
       & {
         display: none;
@@ -136,6 +143,14 @@
     left: 185px;
     top: 100px;
     z-index: 50;
+
+    @media screen and(min-width: 481px) and(max-width: 768px) {
+      & {
+        width: 114px;
+        left: 155px;
+        top: 35px;
+      }
+    }
 
     @media screen and(min-width: 320px) and(max-width: 480px) {
       & {
@@ -168,7 +183,8 @@
         width: 335px;
         height: 333px;
         background-image: url(../images/header/Ellipse_2.png);
-        bottom: 20%;
+        position: absolute;
+        bottom: 10%;
       }
     }
 
@@ -182,7 +198,7 @@
       width: 346px;
       height: 344px;
 
-      right: -310%;
+      right: -60%;
     }
   }
 
@@ -199,7 +215,9 @@
     @media screen and(min-width: 481px) and(max-width: 768px) {
       & {
         background-image: url(../images/header/ice-cream_tablet.png);
-        top: -5%;
+        top: 15%;
+        right: -60%;
+        z-index: 0;
       }
     }
 
@@ -211,7 +229,7 @@
       height: 410px;
       background-image: url(../images/header/ice-cream_mobile.png);
       background-size: contain;
-      margin-left: 150px;
+      left: -25px;
       z-index: 0;
     }
   }
@@ -280,6 +298,13 @@
     position: absolute;
     left: -40%;
     bottom: 0%;
+
+    @media screen and(min-width: 481px) and(max-width: 768px) {
+      & {
+        background-image: url(../images/header/model_tablet.png);
+        background-repeat: no-repeat;
+      }
+    }
 
     @media screen and(min-width: 320px) and(max-width: 480px) {
       & {
