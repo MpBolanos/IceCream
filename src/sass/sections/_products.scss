@@ -3,7 +3,7 @@
   padding-bottom: 98px;
   background-color: $rosa-secundary;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 112px;
   }
@@ -12,7 +12,7 @@
     margin: auto;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 127px;
     padding-bottom: 119px;
   }
@@ -24,11 +24,11 @@
   &__title {
     margin-bottom: 145px;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 150px;
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       margin-bottom: 259px;
     }
   }
@@ -44,12 +44,12 @@
 
   color: $rosa-principal;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: calc(30 / 26);
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: calc(34 / 30);
     letter-spacing: 0.04em;
@@ -66,12 +66,12 @@
 
   color: $rosa-text;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: calc(55 / 48);
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: calc(66 / 58);
     letter-spacing: 0.06em;
@@ -79,38 +79,38 @@
 }
 
 .cards-grid {
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
 
     margin-right: -20px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-right: -27px;
   }
 
   &__item {
     width: 100%;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       flex-basis: calc(100% / 3 - 20px);
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       flex-basis: calc(100% / 3 - 27px);
     }
 
     &:not(:last-child) {
-      @media screen and(max-width: 767px) {
+      @media screen and (max-width: 767px) {
         margin-bottom: 130px;
       }
 
-      @media screen and(min-width: 768px) {
+      @media screen and (min-width: 768px) {
         margin-right: 20px;
         margin-bottom: 0;
       }
 
-      @media screen and(min-width: 1280px) {
+      @media screen and (min-width: 1280px) {
         margin-right: 27px;
       }
     }
@@ -130,13 +130,13 @@
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 152px 11px 40px 11px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     padding: 163px 44px 50px 44px;
   }
 
@@ -154,12 +154,12 @@
 
     transform: translateY(-45%);
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
       width: 220px;
       height: 226px;
     }
 
-    @media screen and(min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       width: 335px;
       height: 335px;
 
@@ -323,7 +323,7 @@
 
   margin-top: 30px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     line-height: 1.76;
 
     overflow: hidden;
@@ -331,7 +331,7 @@
     display: -webkit-box;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
 
     margin-top: 32px;
